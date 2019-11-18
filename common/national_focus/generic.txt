@@ -1668,17 +1668,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = collectivist_ethos
+		id = traditionalism
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = political_effort }
-		mutually_exclusive = { focus = liberty_ethos}
-		available = {
-			OR = {
-				has_government = fascism
-				has_government = communism
-				has_government = neutrality
-			}
-		}
+		mutually_exclusive = { focus = modernism}
 		x = -1
 		y = 1
 		relative_position_id = political_effort
@@ -1707,15 +1700,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nationalism_focus
+		id = support_the_church
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = collectivist_ethos }
-		mutually_exclusive = { focus = internationalism_focus }
+		prerequisite = { focus = traditionalism }
+		mutually_exclusive = { focus = support_the_secular  }
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
 		}
 		x = -2
 		y = 1
